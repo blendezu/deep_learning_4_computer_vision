@@ -1,1 +1,14 @@
- 
+# U-Net Architectures
+
+The following table provides an overview of the various U-Net architectures present in this repository, highlighting their key contributions and general popularity/prevalence in the field of Deep Learning and Computer Vision.
+
+| Architecture | Importance (Key Contribution) | Prevalence / Popularity |
+| :--- | :--- | :--- |
+| **[2D U-Net](./01_2D_UNet/)** | **Foundation:** Introduced the symmetric encoder-decoder structure with skip connections, enabling precise, pixel-level localization and segmentation with relatively little training data. | **Extremely Prevalent:** The baseline and starting point for almost all image segmentation tasks, particularly in medical imaging. |
+| **[3D U-Net](./02_3D_UNet/)** | **Volumetric Processing:** Extended the original 2D architecture to process 3D volumes directly using 3D convolutions, preserving spatial context across depth slices. | **Highly Prevalent:** The standard architecture for segmenting 3D medical scans like MRI and CT volumes. |
+| **[V-Net](./03_V_Net/)** | **Residual Learning & Dice Loss:** Introduced residual connections within 3D U-Net stages for better gradient flow, and popularized the Dice Loss function to tackle highly imbalanced datasets. | **Very Popular:** Widely used in 3D medical segmentation alongside 3D U-Net, especially when foreground classes are small. |
+| **[Attention U-Net](./04_Attention_UNet/)** | **Focused Features:** Integrated Attention Gates (AGs) into the skip connections to automatically focus on target structures and suppress irrelevant background regions. | **Commonly Used:** A standard enhancement over vanilla U-Nets, frequently used when dealing with complex or noisy backgrounds. |
+| **[ResUNet](./05_ResUNet/)** | **Deep Residual Blocks:** Replaced standard convolutional layers with ResNet blocks, allowing for much deeper networks while mitigating the vanishing gradient problem. | **Widely Adopted:** Used across many domains (satellite imagery, medical imaging, general vision) to train deeper, more accurate models. |
+| **[TransUNet](./06_TransUNet/)** | **Global Context via Transformers:** Merges Vision Transformers (ViTs) with the U-Net structure to capture long-range global dependencies while retaining the CNN's fine localization. | **Increasingly Popular:** Highly favored in modern research for complex tasks where global context is as critical as local detail. |
+| **[nnU-Net](./07_nnU-Net/)** | **Automated Configuration:** "No New-Net" is an auto-configuring framework that automates preprocessing, network design, and hyperparameter tuning based on dataset properties. | **The Gold Standard:** The current state-of-the-art baseline and default choice for medical image segmentation challenges worldwide. |
+| **[Diffusion U-Net](./08_Diffusion_UNet/)** | **Generative Backbone:** Repurposed the U-Net architecture (often enhanced with self-attention) to predict and denoise data iteratively within Diffusion Models (e.g., DDPMs). | **Extremely Popular:** At the core of the recent generative AI boom (e.g., Stable Diffusion), powering state-of-the-art image generation. |
