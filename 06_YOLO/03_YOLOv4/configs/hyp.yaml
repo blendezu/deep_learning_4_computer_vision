@@ -1,0 +1,22 @@
+# =============================================================================
+# YOLOv4 Hyperparameters, Architecture & Training Configuration
+# =============================================================================
+
+
+
+
+# -----------------------------------------------------------------------------
+# 1. Image & Architecture Settings
+# -----------------------------------------------------------------------------
+img_size: 416
+multi_scale: [320, 352, 384, 416, 448, 480, 512, 544, 576, 608]
+scale_interval: 10 # Vary image size every N batches during training
+
+# Multi-scale feature map strides:
+# Scale 0: Stride 32 (13x13 grid) -> Large objects
+# Scale 1: Stride 16 (26x26 grid) -> Medium objects
+# Scale 2: Stride 8  (52x52 grid) -> Small objects
+strides: [32, 16, 8]
+
+# Anchors priors (width, height in pixels relative to 416x416):
+# 3 anchors per scale

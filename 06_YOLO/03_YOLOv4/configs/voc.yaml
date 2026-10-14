@@ -1,0 +1,60 @@
+# =============================================================================
+# Pascal VOC 2012 Dataset Configuration
+# =============================================================================
+
+# Dataset download source (Kaggle Dataset ID for automatic download)
+kaggle_dataset_id: "banuprasadb/pascal-voc-2012"
+
+# Paths to data directories
+data_dir: "dataset/VOC2012"
+train_split: "trainval"
+val_split: "val"
+
+# Number of classes
+nc: 20
+
+# Class names
+names:
+  - "aeroplane"
+  - "bicycle"
+  - "bird"
+  - "boat"
+  - "bottle"
+  - "bus"
+  - "car"
+  - "cat"
+  - "chair"
+  - "cow"
+  - "diningtable"
+  - "dog"
+  - "horse"
+  - "motorbike"
+  - "person"
+  - "pottedplant"
+  - "sheep"
+  - "sofa"
+  - "train"
+  - "tvmonitor"
+
+# Hex colors for visualization (plots.py and Weights & Biases)
+colors:
+  - "#FF6B6B" # aeroplane
+  - "#4ECDC4" # bicycle
+  - "#45B7D1" # bird
+  - "#96CEB4" # boat
+  - "#FFEAA7" # bottle
+  - "#DDA0DD" # bus
+  - "#FF8C42" # car
+  - "#A29BFE" # cat
+  - "#FD79A8" # chair
+  - "#00CEC9" # cow
+  - "#E17055" # diningtable
+  - "#6C5CE7" # dog
+  - "#55EFC4" # horse
+  - "#FAB1A0" # motorbike
+  - "#74B9FF" # person
+  - "#81ECEC" # pottedplant
+  - "#FDCB6E" # sheep
+  - "#E84393" # sofa
+  - "#00B894" # train
+  - "#636E72" # tvmonitor
