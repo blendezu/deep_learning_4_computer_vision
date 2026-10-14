@@ -151,9 +151,16 @@ cython_debug/
 02_CNNs/07_DenseNet/Data
 02_CNNs/07_DenseNet/wandb
 
+02_CNNs/08_MobileNet/Data
 02_CNNs/09_EfficientNet/Data
 
+.DLO
 
 *.pth
 
 .DS_Store
+
+.lernthemen
+
+.gitignore
+pyrightconfig.json
