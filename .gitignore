@@ -139,6 +139,7 @@ cython_debug/
 
 # data
 **/data/
+**/Data/
 02_CNNs/02_AlexNet/Data
 02_CNNs/02_AlexNet/wandb
 
@@ -157,6 +158,7 @@ cython_debug/
 .DLO
 
 *.pth
+*.pt
 
 .DS_Store
 
